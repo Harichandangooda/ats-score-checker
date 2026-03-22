@@ -10,4 +10,3 @@ nltk
 regex
 pydantic
 PyMuPDF
-re
