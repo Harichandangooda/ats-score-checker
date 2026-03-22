@@ -1,3 +1,16 @@
+---
+title: ATS Score Checker
+emoji: 🔥
+colorFrom: purple
+colorTo: blue
+sdk: gradio
+sdk_version: 6.9.0
+app_file: app.py
+pinned: false
+license: mit
+short_description: AI powered ATS Score Analyzing Application
+---
+
 # ATS Score Checker (LLM)
 
 A Gradio-based ATS analysis app that compares a resume (`.pdf` or `.docx`) against a job description and returns a streamed, Markdown-formatted report.
