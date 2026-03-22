@@ -100,6 +100,7 @@ if __name__ == "__main__":
 
     is_hf_space = os.getenv("SPACE_ID") is not None
     demo.launch(
+        share=True,
         inbrowser=not is_hf_space,
         server_name="0.0.0.0" if is_hf_space else None,
         server_port=7860 if is_hf_space else None,
