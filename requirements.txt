@@ -1,0 +1,13 @@
+gradio
+openai
+python-dotenv
+pdfplumber
+python-docx
+numpy
+pandas
+scikit-learn
+nltk
+regex
+pydantic
+PyMuPDF
+re
