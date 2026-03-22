@@ -1,3 +1,5 @@
+import os
+
 from dotenv import load_dotenv
 load_dotenv(override=True)
 
@@ -96,4 +98,11 @@ if __name__ == "__main__":
                 outputs=chatbot,
             )
 
-    demo.launch(inbrowser=True, theme=theme, css=custom_css)
+    is_hf_space = os.getenv("SPACE_ID") is not None
+    demo.launch(
+        inbrowser=not is_hf_space,
+        server_name="0.0.0.0" if is_hf_space else None,
+        server_port=7860 if is_hf_space else None,
+        theme=theme,
+        css=custom_css,
+    )
